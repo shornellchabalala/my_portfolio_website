@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shornell Chabalala | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!--navigation-->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Shornell's Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certs">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="{{ url_for('static', filename='CV.pdf') }}" class="btn-cv" download>Download CV</a></li>
+    
+            </ul>
+        </div>
+    </nav>
+
+    <!--hero section-->
+    <section id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Shornell Chabalala</span></h1>
+                <h2>Junior Software Developer</h2>
+                <p>Building innovative solutions with clean, efficient code and creative problem-solving.
+                    </p>
+                   
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Send Me a Message</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/my-picture.jpg') }}" alt="images" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+<!-- About Me Section -->
+<section id="about">
+    <div class="container about-container">
+        <div class="about-content">
+            <h2 class="about-title">About <span>Me</span></h2>
+            <div class="about-text">
+                <p>
+                    Hi, I'm <strong>Shornell Chabalala</strong>, an aspiring 
+                    <strong>Software Developer & IT Specialist</strong> based in South Africa.  
+                    I’m passionate about building software solutions, solving real-world IT problems, 
+                    and constantly learning new technologies.  
+                </p>
+                <p>
+                    Currently, I’m in my final year of IT studies with a focus on 
+                    <strong>Java, Python, and Web Development</strong>.  
+                    I enjoy working on projects that combine creativity and logic — from 
+                    <strong>website development</strong> to 
+                    <strong>IT support & systems management</strong>.
+                </p>
+                <p>
+                    When I’m not sharpening my skills or working on projects, you’ll probably 
+                    find me <strong>gaming</strong> or exploring new <strong>programming concepts</strong> for fun.
+                </p>
+
+               
+                <div class="routine-box">
+                    <pre><code>
+while(alive) {
+    eat();
+    code();
+    game();
+    sleep();
+    repeat();
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--project section-->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My <span>Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+
+                <!--project 1-->
+                <div class="project-card">
+                    <div class="project-badge completed">Live</div>
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/ckc-edition.png') }}" alt="images">
+                    </div>
+                    <div class="project-info">
+                        <h3>CKC Edition Website</h3>
+                        <p>Full-stack business website with responsive design and interactive features for CKC Edition.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                        <a href="https://ckcedition.github.io" target="_blank" class="btn-small btn-dark">Visit Site</a>
+                    </div>
+                </div>
+
+
+                <!--project 2-->
+                <div class="project-card">
+                    <div class="project-badge completed">Live</div>
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/to-do.png') }}" alt="images">
+                    </div>
+                    <div class="project-info">
+                        <h3>To do list Application</h3>
+                        <p>Taskify is a sleek, intuitive, and powerful to-do list app designed to help you organize tasks, boost productivity, and manage your daily goals effortlessly. Whether for work, study, or personal life, Taskify keeps your tasks structured and ensures nothing slips through the cracks.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!--project 3-->
+                <div class="project-card">
+                    <div class="project-badge completed">Live</div>
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/websites.jpg') }}" alt="images">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A curated collection of my best work, skills, and creative journey. Whether you're a potential client, collaborator, or just browsing, this space reflects my passion for software Developer, web design, coding and my commitment to delivering exceptional results.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--project 4-->
+                <div class="project-card">
+                    <div class="project-badge in-progress">In Progress</div>
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/vehicle-control-unit.png') }}" alt="images">
+                    </div>
+                    <div class="project-info">
+                        <h3>Autonomous Vehicle Controller</h3>
+                        <p>ROS-based control system for Arctic Tern autonomous vehicle with obstacle detection.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>ROS</span>
+                            <span>Linux</span>
+                        </div>
+                        <button class="btn-small disabled">
+                            <i class="fas fa-code-branch"></i> Under Development
+                        </button>
+                    </div>
+                </div>
+                
+                <!--project 5-->
+                <div class="project-card">
+                    <div class="project-badge in-progress">In Progress</div>
+                    <div class="project-image">
+                        <img src="{{ url_for('static', filename='images/java-application.jpg') }}" alt="images">
+                    </div>
+                    <div class="project-info">
+                        <h3>CKC Edition Java App</h3>
+                        <p>Desktop application for business inventory management and customer relations.</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                            <span>MySQL</span>
+                        </div>
+                        <button class="btn-small disabled">
+                            <i class="fas fa-code-branch"></i> Under Development
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <div class="section-title">
+            <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="skills-grid">
+
+            <!-- Skill 1 -->
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Programming Languages</h3>
+                <p>Java, Python, JavaScript, SQL</p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, React, Flask, Node.js</p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>MySQL, SQLite, MongoDB</p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Tools & Platforms</h3>
+                <p>Git, GitHub, Linux, Docker, VS Code</p>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="skill-card">
+                <i class="fas fa-users"></i>
+                <h3>Soft Skills</h3>
+                <p>Problem Solving, Teamwork, Adaptability, Communication</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!--certificate section-->
+    <section id="certs">
+        <div class="container">
+            <div class="section-title">
+                <h2><span>Certifications</span></h2>
+            </div>
+            <div class="certs-grid">
+
+                <div class="cert-card">
+                    <img src="{{ url_for('static', filename='images/fnb.png') }}" alt="FNB app academy">
+                    <h3>Full Stack Developer</h3>
+                    <p>Certificate from FNB App Academy Trained in front-end and back-end development using HTML, CSS, JavaScript, React, Node.js, and MongoDB. Built and deployed full-stack web applications with real-world project experience.</p>
+                </div>
+
+                <div class="cert-card">
+                    <img src="{{ url_for('static', filename='images/hacker.png') }}" alt="Cisco Badge">
+                    <h3>Ethical Hacking</h3>
+                    <p>Penetration testing and security assessment techniques</p>
+                </div>
+
+                <div class="cert-card">
+                    <img src="https://via.placeholder.com/100/6c63ff/ffffff?text=Cisco" alt="Cisco Badge">
+                    <h3>Introduction to Networks</h3>
+                    <p>Fundamentals of networking concepts, protocols, and infrastructure</p>
+                </div>
+
+                <div class="cert-card">
+                    <img src="https://via.placeholder.com/100/6c63ff/ffffff?text=Cisco" alt="Cisco Badge">
+                    <h3>Switching, Routing & Wireless</h3>
+                    <p>Enterprise network infrastructure and wireless solutions</p>
+                </div>
+
+                <div class="cert-card">
+                    <img src="https://via.placeholder.com/100/6c63ff/ffffff?text=Cisco" alt="Cisco Badge">
+                    <h3>IT Essentials</h3>
+                    <p>PC hardware and software troubleshooting fundamentals</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In <span>Touch</span></h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>063 859 6132</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>shornellchabalala60@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>South Africa</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://github.com/shornellchabalala"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!--send message form-->
+            <form class="contact-form" id="contactForm" action="{{ url_for('send_message') }}" method="POST">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Hello Shornell, I'd like to discuss a potential opportunity..." required></textarea>
+                </div>
+                     <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+           </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Shornell Chabalala. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
