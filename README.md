@@ -87,7 +87,7 @@ while learning from industry experts and delivering impactful, high-quality soft
 
 📧 **Email:** [shornellchabalala60@gmail.com]  
 🌐 **Portfolio:** [your-portfolio-url.com]  
-💼 **LinkedIn:** [linkedin.com/in/yourprofile]  
+💼 **LinkedIn:** [(https://www.linkedin.com/in/shornell-chabalala)]  
 🐙 **GitHub:** [github.com/shornellchabalala]
 
 ---
